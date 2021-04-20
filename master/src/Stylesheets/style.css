@@ -1,0 +1,655 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    width: 568px;
+    height: 890px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 568px;
+    height: 890px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #6410ff,#ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons{
+    margin: 460px auto;
+    text-align: center;
+
+}
+.social-icons img{
+    width: 30px;
+    margin: 0  12px;
+    box-shadow: 0 0  20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #5de26f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+.span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 350px;
+}
+#register{
+    left: 750px;
+
+}
+.rform-box{
+    width: 580px;
+    height: 1880px auto;
+    position: relative;
+    margin: 3% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    scrollbar-3dlight-color: #6410ff;
+    scroll-behavior: smooth;
+    scrollbar-width: 2px;
+}   
+
+.reg-form{
+    width: 568px;
+    height: 890px;
+    background-image: linear-gradient(rgba(44, 42, 42, 0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+
+.rsubmit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #e2995d, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+progress#strength {
+    width: 60%;
+    height: 8px;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: .2em .2em .2em 0;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@keyframes showForm {
+  from {opacity: 0;}
+  to {opacity: 1}
+}
+@keyframes showForm {
+    from {opacity: 0;}
+    to {opacity: 1}
+  }
+  @keyframes showForm {
+    from {opacity: 0;}
+    to {opacity: 1}
+  }
+.showFormPart3 {
+     animation: formPart3 1s linear
+}
+.showFormAnimation {
+     animation: showForm 1s linear
+}
+.showFormPart2 {
+   animation: formPart2 1s linear
+}
+input:focus {
+    /* shoadow-box: yellow; */
+    box-shadow: 0px 0px 5px 0px #06fafa;
+  }
+@keyframes formPart3 {
+    from { -ms-transform: translate(250px,0px); opacity: 0;}
+    to {-ms-transform: translate(0px,0px);opacity: 1}
+  }  
+@keyframes formPart2 {
+    from { -ms-transform: translate(250px,0px); opacity: 0;}
+    to {-ms-transform: translate(0px,0px);opacity: 1}
+  }
+  .showFormPart1 {
+    animation: formPart1 1s linear
+ }
+ @keyframes formPart1 {
+     from { -ms-transform: translate(250px,0px); opacity: 0;}
+     to {-ms-transform: translate(0px,0px);opacity: 1}
+   }
+@media only screen and (min-width: 319px) {
+  .form-box {
+    padding:10px;
+  }
+  .rform-box {
+    width: unset
+  }
+  body {
+      font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 345px) {
+  .form-box {
+    padding:16px;
+  }
+  .rform-box {
+    width: unset
+  }
+}
+@media only screen and (min-width: 481px) {
+  .form-box {
+    padding:36px;
+  }
+  .rform-box {
+      width: 470px;
+  }
+  body {
+    font-size: 0.95rem;
+}
+}
+@media only screen and (min-width: 610px) {
+    .form-box {
+      padding:42px;
+    }
+    .rform-box {
+        width: 600px;
+    }
+    body {
+      font-size: 0.95rem;
+  }
+  }
+.hero{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: -webkit-center;
+    /* position: absolute; */
+}
+.hero3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: -webkit-center;
+    text-align: left;
+    /* position: absolute; */
+}
+.form-box{
+    /* height: 890px; */
+    /* position: relative; */
+    /* margin: 6% auto; */
+    background: #fff;
+    width: fit-content;
+    /* padding: 5px; */
+    /* overflow: hidden; */
+    
+}
+.button-box{
+    width: fit-content;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0px 0px 5px -2px #00d7e6;
+    border-radius: 30px;
+}
+.toggle-btn{
+    width: 105px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #6410ff,#06eeff);
+    border-radius: 30px;
+    transition: .5s;
+}
+.selectedButton {
+    border-radius: 30px;
+    background: linear-gradient(to right, #6410ff,#06cdff);
+}
+.social-icons{
+    /* margin: 460px auto; */
+    text-align: center;
+    padding-top: 15px;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0  12px;
+    box-shadow: 0 0  20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    /* top: 180px; */
+    /* position: absolute; */
+    width: 280px;
+    /* transition: .5s; */
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.979);
+    outline: none;
+    background: transparent;
+    margin-bottom: 1.2rem
+}
+@-webkit-keyframes autofill {
+    0%,100% {
+        color: #666;
+        background: transparent;
+    }
+}
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+}
+.certificatebox {
+    width: 90.5%;
+    padding: 14px;
+    margin: 14px 0px;
+    border: 1px solid #1ce5ff;
+    border-radius: 10px;
+}
+label {
+    color: 	#595959;
+    letter-spacing: 0.75px;
+}
+.input-field2{
+    width: 94%;
+    padding: 10px 7px;
+    margin: 10px 0;
+    border: 1px solid #09e7f7;
+    outline: none;
+    background: transparent;
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 18px auto;
+    background: linear-gradient(to right, #5db1e2, #06daff);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+.span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 350px;
+}
+#register{
+    left: 750px;
+
+}
+.rform-box{
+    /* width: 580px; */
+    /* height: 1880px auto; */
+    /* position: relative; */
+    margin: 2.5% auto;
+    background: transparent;
+    padding: 5px;
+    overflow: hidden;
+    scrollbar-3dlight-color: #6410ff;
+    scroll-behavior: smooth;
+    scrollbar-width: 2px;
+}   
+.formBox {
+    border:1px solid grey;padding:15px;border-radius:10px;margin-bottom: 15px;
+    background-color: #efecec;
+        background-image: linear-gradient(315deg, #e6f7fc 50%, #c5e9ee 100%);
+    /* box-shadow: 4px 2px 8px #888888; */
+}
+.reg-form{
+    width: 568px;
+    height: 890px;
+    background-image: linear-gradient(rgba(44, 42, 42, 0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+
+.rsubmit-btn{
+    margin-top: 15px;
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #07cef1, #06ffff);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.backButton {
+    text-align: center;
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #05d2f7, #06daff);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+progress#strength {
+    width: 60%;
+    height: 8px;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: .2em .2em .2em 0;
+}
+.formPadding {
+    padding: 15px;
+}
+.buttonNext {
+  padding: 10px 25px;
+  border: 1px solid grey
+}
+.backButton {
+  padding: 10px 25px;
+  width: 75%;
+  margin-top: 15px
+}
+
+fieldset {
+    margin: 2em auto;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+}
+
+.legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: #999;
+}
+
+
+/* Header style */
+#header-background{
+    width:100%;
+    height:100px;
+    margin: 0em auto;
+    padding: 2em 0.1em;
+    background-image: linear-gradient(rgba(44, 42, 42, 0.4),rgba(0,0,0,0.4)),url(WTI-blue-h.png);
+}
+
+/* Select drop down */
+
+/* needed for mobile  */
+select {
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+/*     ------ Option 2: Custom CSS styles */
+.customSelect {
+    position: relative;
+}
+
+/* style the select element */
+.select-css {
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	border: 1px solid #4aa4ab;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: .5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(183,237,241,1) 100%); 
+}
+/* add the downward pointing arrow. */
+.customSelect:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f063";
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    color: #069;
+    pointer-events: none; /* without this the select icon is not 'clickable'. When we add this it enables you to "click through" the pseudo element as if it was not there. This is a fix for chrome and IE */
+    display: inline-block;/* Also need this as a fix for IE, can use display: block; or display: inline-block;*/
+}
+.select-css::-ms-expand {
+	display: none;
+}
+
+.select-css:focus {
+	border-color: #38b5be;;
+    box-shadow: 0 0 3px 1px #169ca6;
+	color: #0f5156;
+	outline: none;
+}
+
+        
+        
+@media screen and (min-width: 430px) {
+        
+        legend {
+            font-size: 1.75em;
+        }
+    
+        fieldset {
+            width: 40%;
+            min-width: 320px;
+        }
+    
+        .checks label {
+            display: inline-block; 
+            padding-top: .5em;
+            margin-top: 0;
+            margin-right: .5em;
+        }
+}
+    
+/* Eth and Gen hovers */
+    /* downward pointing arrow */
+i.fas.fa-caret-down {
+    position: absolute;
+    bottom: -10px;
+    left: 85%;
+    font-size: 1.5em;
+    color: rgb(81, 6, 221);
+}
+/* close icon (x) */
+i.fas.fa-times-circle {
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    z-index: 160;
+    color: rgb(99, 6, 221);
+    font-size: 1rem;
+}
+
+i.fas.fa-question-circle {
+    position: absolute;
+    right: 9px;
+    top: -18px;
+    font-size: .9em;
+    color: rgba(10, 6, 221, 0.8);
+}
+
+
+
+#ethWrap {
+    position: relative;
+    display: flex;
+}
+
+#genWrap {
+    position: relative;
+    display: flex;
+}
+
+.show#eth {
+	top: -110px;
+}
+
+.show#gen {
+	top: -110px;
+}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #6d6ec0;
+    color: white;
+  }
